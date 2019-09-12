@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body class="container">
+
+    <header>
+        <% include ../partials/header %>
+    </header>
+
+    <div class="container">
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Full name</th>
+                    <th>Major</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <% thisdata.students.forEach(function(students){  %>
+                <tr>
+                    <td><%= students.sid %></td>
+                    <td><%= students.name %></td>
+                    <td><%= students.major %></td>
+                </tr>
+                <% }); %></h2>
+
+
+
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+
+</body>
+
+</html>
